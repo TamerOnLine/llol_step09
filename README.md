@@ -29,7 +29,7 @@
 
 ## 📖 Overview
 
-**llol_step07** is the seventh milestone of an open-source dynamic resume builder aimed at empowering multilingual content creation, real-time editing, and customization. It's built for developers who need structured, localized, and exportable resume content managed through a Flask-based admin interface.
+**llol_step09** is the seventh milestone of an open-source dynamic resume builder aimed at empowering multilingual content creation, real-time editing, and customization. It's built for developers who need structured, localized, and exportable resume content managed through a Flask-based admin interface.
 
 ---
 
@@ -38,8 +38,8 @@
 Follow these steps to clone the repository and set up your development environment:
 
 ```bash
-git clone https://github.com/TamerOnLine/llol_step08.git  # Clone the project repository from GitHub
-cd llol_step08                                            # Navigate into the project directory
+git clone https://github.com/TamerOnLine/llol_step09.git  # Clone the project repository from GitHub
+cd llol_step09                                            # Navigate into the project directory
 python -m venv venv                                       # Create a virtual environment named 'venv'
 .\venv\Scripts\Activate                                  # Activate the virtual environment (Windows CMD)
 python -m pip install --upgrade pip                       # Upgrade pip to the latest version
