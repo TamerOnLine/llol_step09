@@ -1,0 +1,118 @@
+{% extends "base.html.j2" %}
+
+{% block title %}{{ _('Manage Paragraphs for Section') }}: {{ section.title }}{% endblock %}
+
+{% block content %}
+<h1>📂 {{ _('Manage Paragraphs for Section') }}: <strong>{{ section.title }}</strong></h1>
+<!-- ✅ Flash messages -->
+
+{% include 'partials/flash_messages.html.j2' %}
+
+
+<!-- ✅ نموذج إضافة فقرة -->
+<h2>➕ {{ _('Add New Paragraph') }}</h2>
+<form method="POST" action="{{ url_for('admin.add_paragraph', section_id=section.id) }}">
+    <label>{{ _('Type') }}:</label>
+    <input type="text" name="type" value="basic" required>
+
+    <label>{{ _('Order') }}:</label>
+    <input type="number" name="order" min="1" value="1" required>
+
+    <label style="margin-left: 10px;">
+        <input type="checkbox" name="is_visible" checked>
+        {{ _('Visible') }}
+    </label>
+
+    <button type="submit">✅ {{ _('Add Paragraph') }}</button>
+</form>
+
+<hr>
+
+<!-- ✅ عرض الفقرات -->
+{% if paragraphs %}
+  {% for paragraph in paragraphs|sort(attribute='order') %}
+    <div id="paragraph-box-{{ paragraph.id }}" style="border: 1px solid #ccc; margin-bottom: 20px; padding: 15px;">
+      <h2 style="display: inline;">
+        📄  <strong>{{ paragraph.field_type|capitalize }}</strong> ({{ paragraph.order }})
+        {% if not paragraph.is_visible %}
+          <span style="color: red;">[{{ _('Hidden') }}]</span>
+        {% endif %}
+      </h2>
+
+      <!-- ✅ أزرار التحكم -->
+      <span style="margin-left: 10px;">
+        <button onclick="toggleEditForm({{ paragraph.id }})" title="{{ _('Edit') }}">✏️</button>
+
+        <form method="POST" action="{{ url_for('admin.delete_paragraph', paragraph_id=paragraph.id) }}"
+              style="display:inline;" onsubmit="return confirm('{{ _('Are you sure you want to delete this paragraph?') }}');">
+          <button type="submit" style="color: red;" title="{{ _('Delete') }}">🗑️</button>
+        </form>
+
+        <form method="POST" action="{{ url_for('admin.move_paragraph_up', paragraph_id=paragraph.id) }}" style="display:inline;">
+          <button type="submit" title="{{ _('Move Up') }}">⬆️</button>
+        </form>
+
+        <form method="POST" action="{{ url_for('admin.move_paragraph_down', paragraph_id=paragraph.id) }}" style="display:inline;">
+          <button type="submit" title="{{ _('Move Down') }}">⬇️</button>
+        </form>
+
+        <form method="POST" action="{{ url_for('admin.toggle_paragraph_visibility', paragraph_id=paragraph.id) }}" style="display:inline;">
+          <button type="submit" title="{{ _('Toggle Visibility') }}">
+            {% if paragraph.is_visible %}👁️{% else %}🙈{% endif %}
+          </button>
+        </form>
+
+        <!-- إدارة الحقول -->
+        <a href="{{ url_for('admin.view_paragraph_fields', paragraph_id=paragraph.id) }}">
+          <button title="{{ _('Manage Fields') }}">🗂️</button>
+        </a>
+      </span>
+
+      <!-- ✅ نموذج التعديل المدمج -->
+      <div id="edit-form-{{ paragraph.id }}" style="display: none; margin-top: 10px;">
+        <form method="POST" action="{{ url_for('admin.edit_paragraph', paragraph_id=paragraph.id) }}">
+          <label>{{ _('Type') }}:</label>
+          <input type="text" name="type" value="{{ paragraph.field_type }}" required>
+
+          <label>{{ _('Order') }}:</label>
+          <input type="number" name="order" value="{{ paragraph.order }}" required>
+
+          <label>
+            <input type="checkbox" name="is_visible" {% if paragraph.is_visible %}checked{% endif %}>
+            {{ _('Visible') }}
+          </label>
+
+          <button type="submit">💾 {{ _('Save') }}</button>
+        </form>
+      </div>
+
+      <!-- ✅ عرض الحقول -->
+      {% if paragraph.resume_fields %}
+        <ul style="margin-left: 20px; margin-top: 10px;">
+          {% for field in paragraph.resume_fields|sort(attribute='order') %}
+            {% if field.is_visible %}
+              <li><strong>{{ field.key }}:</strong> {{ field.value }} <em>({{ field.field_type }})</em></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p style="color: gray; margin-left: 20px;">{{ _('No fields yet.') }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+{% else %}
+  <p style="color: gray;">{{ _('No paragraphs yet.') }}</p>
+{% endif %}
+
+<!-- 🔙 رجوع للأقسام -->
+<a href="{{ url_for('admin.resume_builder') }}">← {{ _('Back to Sections') }}</a>
+
+<!-- ✅ JavaScript لعرض نموذج التعديل -->
+<script>
+function toggleEditForm(id) {
+  const el = document.getElementById("edit-form-" + id);
+  el.style.display = (el.style.display === "none") ? "block" : "none";
+}
+</script>
+
+{% endblock %}

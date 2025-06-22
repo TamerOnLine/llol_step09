@@ -1,0 +1,26 @@
+# step 1: Install Flask
+flask
+# step 3: Install Flask-SQLAlchemy
+flask-sqlalchemy
+# step 11: i18nitialize Flask-Babel
+flask-babel==4.0.0
+deep_translator
+# step 14 - 05: Install Flask-Migrate
+polib
+# step 14 - llol_step06:
+python-dotenv
+psycopg2-binary
+# step 14 - llol_step08:
+# A
+pytest
+pytest-cov
+codecov
+# docs
+mkdocs
+mkdocs-material
+mkdocs-awesome-pages-plugin
+mkdocs-git-revision-date-plugin
+mkdocs-macros-plugin
+
+
+

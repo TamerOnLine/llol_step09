@@ -1,0 +1,20 @@
+name: Auto Ping
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # كل يوم الساعة 6 صباحًا
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⏰ Trigger dummy commit
+        run: |
+          git config --global user.email "bot@github.com"
+          git config --global user.name "GitHub Bot"
+          git clone https://github.com/${{ github.repository }} repo
+          cd repo
+          date > .last_ping
+          git add .last_ping
+          git commit -m "⏱ Auto Ping: $(date)"
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main

@@ -1,0 +1,116 @@
+{% extends "base.html.j2" %}
+
+{% block title %}{{ _('Manage Fields for Paragraph') }}{% endblock %}
+
+{% block content %}
+<h1>🔑 {{ _('Manage Fields for Paragraph') }} – <em>{{ paragraph.type }}</em></h1>
+
+<!-- ✅ Flash messages -->
+
+{% include 'partials/flash_messages.html.j2' %}
+
+
+<!-- ✅ Add Field Form -->
+<h2>➕ {{ _('Add New Field') }}</h2>
+<form method="POST" action="{{ url_for('admin.add_field', paragraph_id=paragraph.id) }}">
+    <label>{{ _('Key') }}:</label>
+    <input type="text" name="key" required>
+
+    <label>{{ _('Value') }}:</label>
+    <input type="text" name="value" required>
+
+    <label>{{ _('Type') }}:</label>
+    <select name="type">
+        <option value="text">Text</option>
+        <option value="link">Link</option>
+        <option value="email">Email</option>
+    </select>
+
+    <label>{{ _('Order') }}:</label>
+    <input type="number" name="order" min="1" value="1" required>
+
+    <label style="margin-left: 10px;">
+        <input type="checkbox" name="is_visible" checked>
+        {{ _('Visible') }}
+    </label>
+
+    <button type="submit">✅ {{ _('Add Field') }}</button>
+</form>
+
+<hr>
+
+<!-- ✅ Display Fields -->
+{% if fields %}
+  {% for field in fields|sort(attribute='order') %}
+    <div id="field-box-{{ field.id }}" style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+      <strong>{{ field.key }}</strong> = "{{ field.value }}" <em>({{ field.type }})</em> [{{ field.order }}]
+      {% if not field.is_visible %}<span style="color: red;">[{{ _('Hidden') }}]</span>{% endif %}
+
+      <!-- Controls -->
+      <span style="margin-left: 10px;">
+        <button onclick="toggleEditForm({{ field.id }})" title="{{ _('Edit') }}">✏️</button>
+
+        <form method="POST" action="{{ url_for('admin.delete_field', field_id=field.id) }}"
+              style="display:inline;" onsubmit="return confirm('{{ _('Delete this field?') }}');">
+          <button type="submit" style="color: red;">🗑️</button>
+        </form>
+
+        <form method="POST" action="{{ url_for('admin.move_field_up', field_id=field.id) }}" style="display:inline;">
+          <button type="submit">⬆️</button>
+        </form>
+
+        <form method="POST" action="{{ url_for('admin.move_field_down', field_id=field.id) }}" style="display:inline;">
+          <button type="submit">⬇️</button>
+        </form>
+
+        <form method="POST" action="{{ url_for('admin.toggle_field_visibility', field_id=field.id) }}" style="display:inline;">
+          <button type="submit">{% if field.is_visible %}👁️{% else %}🙈{% endif %}</button>
+        </form>
+      </span>
+
+      <!-- Inline Edit Form -->
+      <div id="edit-form-{{ field.id }}" style="display: none; margin-top: 10px;">
+        <form method="POST" action="{{ url_for('admin.edit_field', field_id=field.id) }}">
+          <label>{{ _('Key') }}:</label>
+          <input type="text" name="key" value="{{ field.key }}" required>
+
+          <label>{{ _('Value') }}:</label>
+          <input type="text" name="value" value="{{ field.value }}" required>
+
+          <label>{{ _('Type') }}:</label>
+          <select name="type">
+            <option value="text" {% if field.type == 'text' %}selected{% endif %}>Text</option>
+            <option value="link" {% if field.type == 'link' %}selected{% endif %}>Link</option>
+            <option value="email" {% if field.type == 'email' %}selected{% endif %}>Email</option>
+          </select>
+
+          <label>{{ _('Order') }}:</label>
+          <input type="number" name="order" value="{{ field.order }}" required>
+
+          <label>
+            <input type="checkbox" name="is_visible" {% if field.is_visible %}checked{% endif %}>
+            {{ _('Visible') }}
+          </label>
+
+          <button type="submit">💾 {{ _('Save') }}</button>
+        </form>
+      </div>
+    </div>
+  {% endfor %}
+{% else %}
+  <p style="color: gray;">{{ _('No fields yet.') }}</p>
+{% endif %}
+
+<!-- 🔙 Back -->
+<a href="{{ url_for('admin.single_section_view', section_id=paragraph.resume_section_id) }}">
+  ← {{ _('Back to Paragraphs') }}
+</a>
+
+<script>
+function toggleEditForm(id) {
+  const el = document.getElementById("edit-form-" + id);
+  el.style.display = (el.style.display === "none") ? "block" : "none";
+}
+</script>
+
+{% endblock %}

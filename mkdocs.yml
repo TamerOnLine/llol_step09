@@ -1,0 +1,82 @@
+site_name: Lebenslauf
+site_description: Professional documentation for your project using MkDocs
+site_author: Tamer
+site_url: https://tameronline.github.io/llol_step08/
+
+repo_name: TamerOnLine/llol_step08
+repo_url: https://github.com/TamerOnLine/llol_step08
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  custom_dir: docs/overrides
+  logo: screenshots/logo.svg
+  favicon: screenshots/favicon.ico
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - content.code.annotate
+    - content.code.copy
+    - toc.integrate
+    - palette.toggle
+  copyright: "© 2025 Tamer. All rights reserved."
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      primary: teal
+      accent: deep purple
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: lime
+
+nav:
+  - Home: index.md
+  - Sections:
+      - About: sections/about.md
+      - Contact: sections/contact.md
+      - Important Links: sections/important-links.md
+      - Privacy Policy: sections/privacy.md
+      - Terms of Service: sections/terms.md
+
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.emoji
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+  - awesome-pages
+  - git-revision-date
+#  - macros
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/TamerOnLine
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/tameronline/
+  version:
+    provider: git
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js

@@ -1,0 +1,17 @@
+{% extends "base.html.j2" %}
+
+{% block title %}{{ _('Welcome to Resume Project') }}{% endblock %}
+
+{% block content %}
+  <h1>👋 {{ _('Welcome to Resume Builder') }}</h1>
+  <p>{{ _('This platform allows you to build multilingual resumes dynamically.') }}</p>
+
+  <div style="margin-top: 30px;">
+    <a href="{{ url_for('admin.resume_builder') }}">
+      <button style="padding: 10px 20px;">🧱 {{ _('Go to Resume Builder') }}</button>
+    </a>
+    <a href="{{ url_for('admin.manage_settings') }}">
+      <button style="padding: 10px 20px; margin-left: 10px;">🎨 {{ _('Customize Style') }}</button>
+    </a>
+  </div>
+{% endblock %}

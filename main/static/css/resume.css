@@ -1,0 +1,58 @@
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body.blue {
+  background-color: #001f3f;
+  color: #cce6ff;
+}
+
+body.brown {
+  background-color: #3e2723;
+  color: #fce4ec;
+}
+
+body.purple {
+  background-color: #4a148c;
+  color: #e1bee7;
+}
+
+body.light a {
+  color: #007bff;
+}
+
+body.dark a {
+  color: #90caf9;
+}
+
+body.blue a {
+  color: #66ccff;
+}
+
+body.brown a {
+  color: #ffccbc;
+}
+
+body.purple a {
+  color: #ba68c8;
+}
+
+.section-title {
+  border-bottom: 1px solid #ccc;
+  margin-top: 40px;
+}
+
+.section-content {
+  white-space: pre-wrap;
+  margin-top: 10px;
+}
+
+.section-content p {
+  margin-bottom: 10px;
+}
