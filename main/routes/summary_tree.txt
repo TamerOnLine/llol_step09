@@ -1,0 +1,12 @@
+📁 routes/
+├── 📁 admin/
+│   ├── __init__.py
+│   ├── admin_builder_routes.py
+│   ├── admin_field.py
+│   ├── admin_paragraph.py
+│   └── admin_routes.py
+├── 📁 resume_templates/
+│   ├── __init__.py
+│   └── template01_routes.py
+├── __init__.py
+└── main_routes.py

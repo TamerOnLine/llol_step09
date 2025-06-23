@@ -13,7 +13,7 @@ msgstr ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-06-22 14:40+0200\n"
+"POT-Creation-Date: 2025-06-23 02:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,380 +22,430 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: M:/llol_step08/main/routes/main_routes.py:25
+#: M:/llol_step09/main/routes/main_routes.py:27
 msgid "Select language:"
 msgstr "Sprache auswählen:"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:29
-msgid "✅ Section added successfully"
-msgstr "✅ Abschnitt erfolgreich hinzugefügt"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:28
+msgid "Section added successfully"
+msgstr "Abschnitt erfolgreich hinzugefügt"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:41
-msgid "⚠️ Section title cannot be empty"
-msgstr "⚠️ Abschnitt Titel kann nicht leer sein"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:40
+msgid "Section title cannot be empty"
+msgstr "Der Abschnittstitel kann nicht leer sein"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:50
-msgid "💾 Section updated successfully"
-msgstr "💾 Abschnitt erfolgreich aktualisiert"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:49
+msgid "Section updated successfully"
+msgstr "Abschnitt erfolgreich aktualisiert"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:62
-msgid "🗑️ Section deleted"
-msgstr "🗑️ Abschnitt gelöscht"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:60
+msgid "Section deleted"
+msgstr "Abschnitt gelöscht"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:81
-msgid "⬆️ Section moved up"
-msgstr "⬆️ Abschnitt bewegt sich"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:77
+msgid "Section moved up"
+msgstr "Abschnitt nach oben"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:83
-#: M:/llol_step08/main/routes/admin/admin_field.py:87
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:89
-msgid "⚠️ Already at the top"
-msgstr "⚠️ bereits oben"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:79
+#: M:/llol_step09/main/routes/admin/admin_field.py:90
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:97
+msgid "Already at the top"
+msgstr "Bereits oben"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:100
-msgid "⬇️ Section moved down"
-msgstr "⬇️ Abschnitt nach unten"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:96
+msgid "Section moved down"
+msgstr "Abschnitt nach unten"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:102
-#: M:/llol_step08/main/routes/admin/admin_field.py:106
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:108
-msgid "⚠️ Already at the bottom"
-msgstr "⚠️ bereits unten"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:98
+#: M:/llol_step09/main/routes/admin/admin_field.py:111
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:117
+msgid "Already at the bottom"
+msgstr "Bereits unten"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:116
-msgid "👁️ Section is now visible"
-msgstr "👁️ Der Abschnitt ist jetzt sichtbar"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:110
+msgid "Section is now visible"
+msgstr "Der Abschnitt ist jetzt sichtbar"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:118
-msgid "🙈 Section is now hidden"
-msgstr "🙈 Der Abschnitt ist jetzt versteckt"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:112
+msgid "Section is now hidden"
+msgstr "Der Abschnitt ist jetzt versteckt"
 
-#: M:/llol_step08/main/routes/admin/admin_field.py:43
-msgid "✅ Field added successfully"
-msgstr "✅ Feld erfolgreich hinzugefügt"
+#: M:/llol_step09/main/routes/admin/admin_field.py:42
+msgid "Field added successfully"
+msgstr "Feld erfolgreich hinzugefügt"
 
-#: M:/llol_step08/main/routes/admin/admin_field.py:57
-msgid "💾 Field updated successfully"
-msgstr "💾 Feld erfolgreich aktualisiert"
+#: M:/llol_step09/main/routes/admin/admin_field.py:57
+msgid "Field updated successfully"
+msgstr "Feld erfolgreich aktualisiert"
 
-#: M:/llol_step08/main/routes/admin/admin_field.py:68
-msgid "🗑 Field deleted"
-msgstr "🗑 Feld gelöscht"
+#: M:/llol_step09/main/routes/admin/admin_field.py:69
+msgid "Field deleted"
+msgstr "Feld gelöscht"
 
-#: M:/llol_step08/main/routes/admin/admin_field.py:84
-msgid "⬆️ Field moved up"
-msgstr "⬆️ Feld bewegt sich"
+#: M:/llol_step09/main/routes/admin/admin_field.py:87
+msgid "Field moved up"
+msgstr "Feld bewegte sich"
 
-#: M:/llol_step08/main/routes/admin/admin_field.py:103
-msgid "⬇️ Field moved down"
-msgstr "⬇️ Feld nach unten bewegt"
+#: M:/llol_step09/main/routes/admin/admin_field.py:108
+msgid "Field moved down"
+msgstr "Feld bewegte sich nach unten"
 
-#: M:/llol_step08/main/routes/admin/admin_field.py:117
-msgid "👁️ Field is now visible"
-msgstr "👁️ Feld ist jetzt sichtbar"
+#: M:/llol_step09/main/routes/admin/admin_field.py:123
+msgid "Field is now visible"
+msgstr "Feld ist jetzt sichtbar"
 
-#: M:/llol_step08/main/routes/admin/admin_field.py:120
-msgid "🙈 Field is now hidden"
-msgstr "🙈 Feld ist jetzt versteckt"
+#: M:/llol_step09/main/routes/admin/admin_field.py:125
+msgid "Field is now hidden"
+msgstr "Feld ist jetzt versteckt"
 
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:33
-msgid "✅ Paragraph added successfully"
-msgstr "✅ Absatz erfolgreich hinzugefügt"
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:37
+msgid "Paragraph added successfully"
+msgstr "Absatz erfolgreich hinzugefügt"
 
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:45
-msgid "💾 Paragraph updated successfully"
-msgstr "💾 Absatz erfolgreich aktualisiert"
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:51
+msgid "Paragraph updated successfully"
+msgstr "Absatz erfolgreich aktualisiert"
 
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:56
-msgid "🗑️ Paragraph deleted"
-msgstr "🗑️ Absatz gelöscht"
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:63
+msgid "Paragraph deleted"
+msgstr "Absatz gelöscht"
 
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:67
-msgid "👁️ Paragraph is now visible"
-msgstr "👁️ Absatz ist jetzt sichtbar"
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:75
+msgid "Paragraph is now visible"
+msgstr "Absatz ist jetzt sichtbar"
 
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:70
-msgid "🙈 Paragraph is now hidden"
-msgstr "🙈 Absatz ist jetzt versteckt"
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:77
+msgid "Paragraph is now hidden"
+msgstr "Absatz ist jetzt versteckt"
 
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:86
-msgid "⬆️ Paragraph moved up"
-msgstr "⬆️ Absatz bewegte sich"
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:94
+msgid "Paragraph moved up"
+msgstr "Absatz bewegte sich"
 
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:105
-msgid "⬇️ Paragraph moved down"
-msgstr "⬇️ Absatz bewegte sich nach unten"
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:114
+msgid "Paragraph moved down"
+msgstr "Absatz bewegte sich"
 
-#: M:/llol_step08/main/templates/base.html.j2:5
+#: M:/llol_step09/main/templates/base.html.j2:5
 msgid "Resume Project"
 msgstr "Projekt wieder aufnehmen"
 
-#: M:/llol_step08/main/templates/home.html.j2:4
+#: M:/llol_step09/main/templates/home.html.j2:4
 msgid "Resume Project gestartet erfolgreich!"
 msgstr "Lebenslauf Projekt Gestartett Erfolgreich!"
 
-#: M:/llol_step08/main/templates/home.html.j2:5
+#: M:/llol_step09/main/templates/home.html.j2:5
 msgid "Welcome to your multilingual resume application."
 msgstr "Willkommen bei Ihrer mehrsprachigen Lebenslaufanwendung."
 
-#: M:/llol_step08/main/templates/index.html.j2:3
+#: M:/llol_step09/main/templates/index.html.j2:3
 msgid "Welcome to Resume Project"
 msgstr "Willkommen zum Lebenslaufprojekt"
 
-#: M:/llol_step08/main/templates/index.html.j2:6
+#: M:/llol_step09/main/templates/index.html.j2:6
 msgid "Welcome to Resume Builder"
 msgstr "Willkommen bei Resume Builder"
 
-#: M:/llol_step08/main/templates/index.html.j2:7
+#: M:/llol_step09/main/templates/index.html.j2:7
 msgid "This platform allows you to build multilingual resumes dynamically."
 msgstr "Mit dieser Plattform können Sie mehrsprachige Lebensläufe dynamisch erstellen."
 
-#: M:/llol_step08/main/templates/index.html.j2:11
+#: M:/llol_step09/main/templates/index.html.j2:11
 msgid "Go to Resume Builder"
 msgstr "Gehen Sie zum Resume Builder"
 
-#: M:/llol_step08/main/templates/index.html.j2:14
+#: M:/llol_step09/main/templates/index.html.j2:14
 msgid "Customize Style"
 msgstr "Stil anpassen"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:3
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:6
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:3
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:6
 msgid "Manage Fields for Paragraph"
 msgstr "Felder für Absatz verwalten"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:14
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:14
 msgid "Add New Field"
 msgstr "Neues Feld hinzufügen"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:16
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:74
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:16
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:74
 msgid "Key"
 msgstr "Schlüssel"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:19
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:77
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:19
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:77
 msgid "Value"
 msgstr "Wert"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:22
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:80
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:15
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:74
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:22
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:80
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:15
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:90
 msgid "Type"
 msgstr "Typ"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:29
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:87
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:26
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:83
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:18
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:77
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:29
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:87
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:26
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:83
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:18
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:93
 msgid "Order"
 msgstr "Befehl"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:34
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:92
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:23
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:82
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:34
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:92
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:39
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:113
 msgid "Visible"
 msgstr "Sichtbar"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:37
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:37
 msgid "Add Field"
 msgstr "Feld hinzufügen"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:47
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:39
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:38
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:47
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:39
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:54
 msgid "Hidden"
 msgstr "Versteckt"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:51
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:44
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:44
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:51
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:44
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:60
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:54
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:54
 msgid "Delete this field?"
 msgstr "Dieses Feld löschen?"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:95
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:86
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:85
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:95
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:86
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:116
 msgid "Save"
 msgstr "Speichern"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:101
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:99
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:101
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:130
 msgid "No fields yet."
 msgstr "Noch keine Felder."
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:106
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:106
 msgid "Back to Paragraphs"
 msgstr "Zurück zu Absätzen"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:3
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:3
 msgid "Interactive Resume Builder"
 msgstr "Interaktiver Lebenslaufbauer"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:6
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:6
 msgid "Resume Builder"
 msgstr "Lebenslaufbauer"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:14
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:14
 msgid "Add New Section"
 msgstr "Neuen Abschnitt hinzufügen"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:16
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:73
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:16
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:73
 msgid "Title"
 msgstr "Titel"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:19
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:76
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:19
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:76
 msgid "Language"
 msgstr "Sprache"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:21
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:78
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:21
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:78
 msgid "English"
 msgstr "Englisch"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:22
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:78
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:22
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:78
 msgid "Arabic"
 msgstr "Arabisch"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:23
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:78
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:23
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:78
 msgid "German"
 msgstr "Deutsch"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:29
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:29
 msgid "Add Section"
 msgstr "Abschnitt hinzufügen"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:47
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:47
 msgid "Are you sure you want to delete this section?"
 msgstr "Sind Sie sicher, dass Sie diesen Abschnitt löschen möchten?"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:48
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:48
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:48
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:64
 msgid "Delete"
 msgstr "Löschen"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:52
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:52
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:52
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:68
 msgid "Move Up"
 msgstr "Nach oben gehen"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:56
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:56
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:56
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:72
 msgid "Move Down"
 msgstr "Sich nach unten bewegen"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:60
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:60
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:60
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:76
 msgid "Toggle Visibility"
 msgstr "Sichtbarkeit umschalten"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:66
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:66
 msgid "Manage Paragraphs"
 msgstr "Absätze verwalten"
 
-#: M:/llol_step08/main/templates/admin/sections.html.j2:3
+#: M:/llol_step09/main/templates/admin/sections.html.j2:3
 msgid "Manage Sections"
 msgstr "Abschnitte verwalten"
 
-#: M:/llol_step08/main/templates/admin/sections.html.j2:6
+#: M:/llol_step09/main/templates/admin/sections.html.j2:6
 msgid "Edit Resume Sections"
 msgstr "Lebenslaufabschnitte bearbeiten"
 
-#: M:/llol_step08/main/templates/admin/sections.html.j2:13
-#: M:/llol_step08/main/templates/admin/settings.html.j2:89
+#: M:/llol_step09/main/templates/admin/sections.html.j2:13
+#: M:/llol_step09/main/templates/admin/settings.html.j2:89
 msgid "Save Changes"
 msgstr "Änderungen speichern"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:3
+#: M:/llol_step09/main/templates/admin/settings.html.j2:3
 msgid "Edit CSS Settings"
 msgstr "Bearbeiten Sie die CSS -Einstellungen"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:6
+#: M:/llol_step09/main/templates/admin/settings.html.j2:6
 msgid "Resume Style Settings"
 msgstr "Lebenslauf -Stileinstellungen"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:15
+#: M:/llol_step09/main/templates/admin/settings.html.j2:15
 msgid "Live Preview"
 msgstr "Live -Vorschau"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:18
+#: M:/llol_step09/main/templates/admin/settings.html.j2:18
 msgid "Example Title"
 msgstr "Beispieltitel"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:19
+#: M:/llol_step09/main/templates/admin/settings.html.j2:19
 msgid "This is a sample section with example content."
 msgstr "Dies ist ein Beispielabschnitt mit Beispielinhalt."
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:23
+#: M:/llol_step09/main/templates/admin/settings.html.j2:23
 msgid "section_title_css"
 msgstr "Abschnitt_title_css"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:25
-#: M:/llol_step08/main/templates/admin/settings.html.j2:51
+#: M:/llol_step09/main/templates/admin/settings.html.j2:25
+#: M:/llol_step09/main/templates/admin/settings.html.j2:51
 msgid "Font Size"
 msgstr "Schriftgröße"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:34
-#: M:/llol_step08/main/templates/admin/settings.html.j2:60
+#: M:/llol_step09/main/templates/admin/settings.html.j2:34
+#: M:/llol_step09/main/templates/admin/settings.html.j2:60
 msgid "Color"
 msgstr "Farbe"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:39
+#: M:/llol_step09/main/templates/admin/settings.html.j2:39
 msgid "Font Weight"
 msgstr "Schriftgewicht"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:49
+#: M:/llol_step09/main/templates/admin/settings.html.j2:49
 msgid "paragraph_css"
 msgstr "Abschnitt_CSS"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:69
+#: M:/llol_step09/main/templates/admin/settings.html.j2:69
 msgid "Choose Theme Mode"
 msgstr "Wählen Sie den Themenmodus"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:70
+#: M:/llol_step09/main/templates/admin/settings.html.j2:70
 msgid "Theme"
 msgstr "Thema"
 
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:3
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:6
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:3
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:6
 msgid "Manage Paragraphs for Section"
 msgstr "Absätze für den Abschnitt verwalten"
 
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:13
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:13
 msgid "Add New Paragraph"
 msgstr "Fügen Sie einen neuen Absatz hinzu"
 
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:26
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:21
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:96
+msgid "Location"
+msgstr "Standort"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:23
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:98
+msgid "Main"
+msgstr "Hauptsächlich"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:24
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:99
+msgid "Secondary"
+msgstr "Sekundär"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:25
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:100
+msgid "Header"
+msgstr "Kopfball"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:26
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:101
+msgid "Footer"
+msgstr "Fußzeile"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:27
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:102
+msgid "Sidebar"
+msgstr "Seitenleiste"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:28
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:103
+msgid "Topbar"
+msgstr "Topbar"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:29
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:104
+msgid "Left Column"
+msgstr "Linke Säule"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:30
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:105
+msgid "Right Column"
+msgstr "Rechte Spalte"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:31
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:106
+msgid "Highlighted"
+msgstr "Hervorgehoben"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:42
 msgid "Add Paragraph"
 msgstr "Absatz hinzufügen"
 
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:47
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:63
 msgid "Are you sure you want to delete this paragraph?"
 msgstr "Sind Sie sicher, dass Sie diesen Absatz löschen möchten?"
 
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:67
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:83
 msgid "Manage Fields"
 msgstr "Felder verwalten"
 
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:104
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:135
 msgid "No paragraphs yet."
 msgstr "Noch keine Absätze."
 
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:108
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:139
 msgid "Back to Sections"
 msgstr "Zurück zu Abschnitten"
 
-#: M:/llol_step08/main/templates/partials/footer.html.j2:2
+#: M:/llol_step09/main/templates/partials/footer.html.j2:2
 msgid "All rights reserved."
 msgstr "Alle Rechte vorbehalten."

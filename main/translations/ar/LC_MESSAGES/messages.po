@@ -13,7 +13,7 @@ msgstr ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-06-22 14:40+0200\n"
+"POT-Creation-Date: 2025-06-23 02:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,380 +22,430 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: M:/llol_step08/main/routes/main_routes.py:25
+#: M:/llol_step09/main/routes/main_routes.py:27
 msgid "Select language:"
 msgstr "حدد اللغة:"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:29
-msgid "✅ Section added successfully"
-msgstr "✅ تمت إضافة القسم بنجاح"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:28
+msgid "Section added successfully"
+msgstr "أضاف القسم بنجاح"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:41
-msgid "⚠️ Section title cannot be empty"
-msgstr "⚠ لا يمكن أن يكون عنوان القسم فارغًا"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:40
+msgid "Section title cannot be empty"
+msgstr "لا يمكن أن يكون عنوان القسم فارغًا"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:50
-msgid "💾 Section updated successfully"
-msgstr "💾 تم تحديث القسم بنجاح"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:49
+msgid "Section updated successfully"
+msgstr "تم تحديث القسم بنجاح"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:62
-msgid "🗑️ Section deleted"
-msgstr "🗑 القسم المحذوف"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:60
+msgid "Section deleted"
+msgstr "تم حذف القسم"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:81
-msgid "⬆️ Section moved up"
-msgstr "⬆ انتقل القسم لأعلى"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:77
+msgid "Section moved up"
+msgstr "انتقل القسم"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:83
-#: M:/llol_step08/main/routes/admin/admin_field.py:87
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:89
-msgid "⚠️ Already at the top"
-msgstr "⚠ بالفعل في الأعلى"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:79
+#: M:/llol_step09/main/routes/admin/admin_field.py:90
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:97
+msgid "Already at the top"
+msgstr "بالفعل في القمة"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:100
-msgid "⬇️ Section moved down"
-msgstr "⬇ نقل القسم لأسفل"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:96
+msgid "Section moved down"
+msgstr "انتقل القسم لأسفل"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:102
-#: M:/llol_step08/main/routes/admin/admin_field.py:106
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:108
-msgid "⚠️ Already at the bottom"
-msgstr "⚠ بالفعل في الأسفل"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:98
+#: M:/llol_step09/main/routes/admin/admin_field.py:111
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:117
+msgid "Already at the bottom"
+msgstr "بالفعل في القاع"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:116
-msgid "👁️ Section is now visible"
-msgstr "👁 القسم الآن مرئي"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:110
+msgid "Section is now visible"
+msgstr "القسم الآن مرئي"
 
-#: M:/llol_step08/main/routes/admin/admin_builder_routes.py:118
-msgid "🙈 Section is now hidden"
-msgstr "🙈 القسم مخفي الآن"
+#: M:/llol_step09/main/routes/admin/admin_builder_routes.py:112
+msgid "Section is now hidden"
+msgstr "القسم مخفي الآن"
 
-#: M:/llol_step08/main/routes/admin/admin_field.py:43
-msgid "✅ Field added successfully"
-msgstr "✅ تمت إضافة الحقل بنجاح"
+#: M:/llol_step09/main/routes/admin/admin_field.py:42
+msgid "Field added successfully"
+msgstr "وأضاف الحقل بنجاح"
 
-#: M:/llol_step08/main/routes/admin/admin_field.py:57
-msgid "💾 Field updated successfully"
-msgstr "💾 تحديث الحقل بنجاح"
+#: M:/llol_step09/main/routes/admin/admin_field.py:57
+msgid "Field updated successfully"
+msgstr "تم تحديث الحقل بنجاح"
 
-#: M:/llol_step08/main/routes/admin/admin_field.py:68
-msgid "🗑 Field deleted"
-msgstr "🗑 حذف الحقل"
+#: M:/llol_step09/main/routes/admin/admin_field.py:69
+msgid "Field deleted"
+msgstr "حذف الحقل"
 
-#: M:/llol_step08/main/routes/admin/admin_field.py:84
-msgid "⬆️ Field moved up"
-msgstr "⬆ تحرك الحقل لأعلى"
+#: M:/llol_step09/main/routes/admin/admin_field.py:87
+msgid "Field moved up"
+msgstr "تحرك الحقل"
 
-#: M:/llol_step08/main/routes/admin/admin_field.py:103
-msgid "⬇️ Field moved down"
-msgstr "⬇ تحرك الحقل لأسفل"
+#: M:/llol_step09/main/routes/admin/admin_field.py:108
+msgid "Field moved down"
+msgstr "تحرك الحقل لأسفل"
 
-#: M:/llol_step08/main/routes/admin/admin_field.py:117
-msgid "👁️ Field is now visible"
-msgstr "👁 الحقل الآن مرئي"
+#: M:/llol_step09/main/routes/admin/admin_field.py:123
+msgid "Field is now visible"
+msgstr "الحقل مرئي الآن"
 
-#: M:/llol_step08/main/routes/admin/admin_field.py:120
-msgid "🙈 Field is now hidden"
-msgstr "🙈 الحقل مخفي الآن"
+#: M:/llol_step09/main/routes/admin/admin_field.py:125
+msgid "Field is now hidden"
+msgstr "الحقل مخفي الآن"
 
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:33
-msgid "✅ Paragraph added successfully"
-msgstr "✅ أضافت الفقرة بنجاح"
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:37
+msgid "Paragraph added successfully"
+msgstr "وأضافت الفقرة بنجاح"
 
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:45
-msgid "💾 Paragraph updated successfully"
-msgstr "💾 تم تحديث الفقرة بنجاح"
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:51
+msgid "Paragraph updated successfully"
+msgstr "تم تحديث الفقرة بنجاح"
 
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:56
-msgid "🗑️ Paragraph deleted"
-msgstr "🗑 الفقرة المحذوفة"
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:63
+msgid "Paragraph deleted"
+msgstr "تم حذف الفقرة"
 
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:67
-msgid "👁️ Paragraph is now visible"
-msgstr "👁 الفقرة مرئية الآن"
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:75
+msgid "Paragraph is now visible"
+msgstr "الفقرة مرئية الآن"
 
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:70
-msgid "🙈 Paragraph is now hidden"
-msgstr "🙈 الفقرة مخفية الآن"
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:77
+msgid "Paragraph is now hidden"
+msgstr "الفقرة مخفية الآن"
 
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:86
-msgid "⬆️ Paragraph moved up"
-msgstr "⬆ انتقلت الفقرة"
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:94
+msgid "Paragraph moved up"
+msgstr "انتقلت الفقرة"
 
-#: M:/llol_step08/main/routes/admin/admin_paragraph.py:105
-msgid "⬇️ Paragraph moved down"
-msgstr "⬇ انتقلت الفقرة إلى أسفل"
+#: M:/llol_step09/main/routes/admin/admin_paragraph.py:114
+msgid "Paragraph moved down"
+msgstr "انتقلت الفقرة لأسفل"
 
-#: M:/llol_step08/main/templates/base.html.j2:5
+#: M:/llol_step09/main/templates/base.html.j2:5
 msgid "Resume Project"
 msgstr "استئناف المشروع"
 
-#: M:/llol_step08/main/templates/home.html.j2:4
+#: M:/llol_step09/main/templates/home.html.j2:4
 msgid "Resume Project gestartet erfolgreich!"
 msgstr "استئناف مشروع الجستارت erfolgreich!"
 
-#: M:/llol_step08/main/templates/home.html.j2:5
+#: M:/llol_step09/main/templates/home.html.j2:5
 msgid "Welcome to your multilingual resume application."
 msgstr "مرحبًا بك في تطبيق السيرة الذاتية متعددة اللغات."
 
-#: M:/llol_step08/main/templates/index.html.j2:3
+#: M:/llol_step09/main/templates/index.html.j2:3
 msgid "Welcome to Resume Project"
 msgstr "مرحبا بكم في استئناف المشروع"
 
-#: M:/llol_step08/main/templates/index.html.j2:6
+#: M:/llol_step09/main/templates/index.html.j2:6
 msgid "Welcome to Resume Builder"
 msgstr "مرحبا بكم في استئناف البناء"
 
-#: M:/llol_step08/main/templates/index.html.j2:7
+#: M:/llol_step09/main/templates/index.html.j2:7
 msgid "This platform allows you to build multilingual resumes dynamically."
 msgstr "يتيح لك هذا النظام الأساسي بناء السير الذاتية متعددة اللغات ديناميكيا."
 
-#: M:/llol_step08/main/templates/index.html.j2:11
+#: M:/llol_step09/main/templates/index.html.j2:11
 msgid "Go to Resume Builder"
 msgstr "اذهب لاستئناف البناء"
 
-#: M:/llol_step08/main/templates/index.html.j2:14
+#: M:/llol_step09/main/templates/index.html.j2:14
 msgid "Customize Style"
 msgstr "تخصيص النمط"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:3
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:6
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:3
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:6
 msgid "Manage Fields for Paragraph"
 msgstr "إدارة الحقول للفقرة"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:14
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:14
 msgid "Add New Field"
 msgstr "أضف حقلًا جديدًا"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:16
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:74
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:16
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:74
 msgid "Key"
 msgstr "مفتاح"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:19
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:77
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:19
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:77
 msgid "Value"
 msgstr "قيمة"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:22
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:80
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:15
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:74
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:22
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:80
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:15
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:90
 msgid "Type"
 msgstr "يكتب"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:29
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:87
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:26
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:83
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:18
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:77
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:29
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:87
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:26
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:83
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:18
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:93
 msgid "Order"
 msgstr "طلب"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:34
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:92
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:23
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:82
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:34
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:92
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:39
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:113
 msgid "Visible"
 msgstr "مرئي"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:37
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:37
 msgid "Add Field"
 msgstr "إضافة الحقل"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:47
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:39
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:38
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:47
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:39
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:54
 msgid "Hidden"
 msgstr "مختفي"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:51
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:44
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:44
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:51
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:44
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:60
 msgid "Edit"
 msgstr "يحرر"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:54
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:54
 msgid "Delete this field?"
 msgstr "حذف هذا الحقل؟"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:95
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:86
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:85
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:95
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:86
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:116
 msgid "Save"
 msgstr "يحفظ"
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:101
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:99
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:101
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:130
 msgid "No fields yet."
 msgstr "لا حقول حتى الآن."
 
-#: M:/llol_step08/main/templates/admin/paragraph_fields.html.j2:106
+#: M:/llol_step09/main/templates/admin/paragraph_fields.html.j2:106
 msgid "Back to Paragraphs"
 msgstr "العودة إلى الفقرات"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:3
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:3
 msgid "Interactive Resume Builder"
 msgstr "منشئ السيرة الذاتية التفاعلية"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:6
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:6
 msgid "Resume Builder"
 msgstr "استئناف البناء"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:14
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:14
 msgid "Add New Section"
 msgstr "أضف قسمًا جديدًا"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:16
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:73
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:16
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:73
 msgid "Title"
 msgstr "عنوان"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:19
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:76
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:19
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:76
 msgid "Language"
 msgstr "لغة"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:21
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:78
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:21
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:78
 msgid "English"
 msgstr "إنجليزي"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:22
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:78
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:22
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:78
 msgid "Arabic"
 msgstr "عربي"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:23
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:78
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:23
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:78
 msgid "German"
 msgstr "الألمانية"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:29
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:29
 msgid "Add Section"
 msgstr "إضافة القسم"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:47
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:47
 msgid "Are you sure you want to delete this section?"
 msgstr "هل أنت متأكد أنك تريد حذف هذا القسم؟"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:48
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:48
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:48
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:64
 msgid "Delete"
 msgstr "يمسح"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:52
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:52
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:52
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:68
 msgid "Move Up"
 msgstr "تحرك"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:56
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:56
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:56
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:72
 msgid "Move Down"
 msgstr "تحرك لأسفل"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:60
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:60
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:60
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:76
 msgid "Toggle Visibility"
 msgstr "تبديل الرؤية"
 
-#: M:/llol_step08/main/templates/admin/resume_builder.html.j2:66
+#: M:/llol_step09/main/templates/admin/resume_builder.html.j2:66
 msgid "Manage Paragraphs"
 msgstr "إدارة الفقرات"
 
-#: M:/llol_step08/main/templates/admin/sections.html.j2:3
+#: M:/llol_step09/main/templates/admin/sections.html.j2:3
 msgid "Manage Sections"
 msgstr "إدارة الأقسام"
 
-#: M:/llol_step08/main/templates/admin/sections.html.j2:6
+#: M:/llol_step09/main/templates/admin/sections.html.j2:6
 msgid "Edit Resume Sections"
 msgstr "تحرير الأقسام السيرة الذاتية"
 
-#: M:/llol_step08/main/templates/admin/sections.html.j2:13
-#: M:/llol_step08/main/templates/admin/settings.html.j2:89
+#: M:/llol_step09/main/templates/admin/sections.html.j2:13
+#: M:/llol_step09/main/templates/admin/settings.html.j2:89
 msgid "Save Changes"
 msgstr "حفظ التغييرات"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:3
+#: M:/llol_step09/main/templates/admin/settings.html.j2:3
 msgid "Edit CSS Settings"
 msgstr "تحرير إعدادات CSS"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:6
+#: M:/llol_step09/main/templates/admin/settings.html.j2:6
 msgid "Resume Style Settings"
 msgstr "استئناف إعدادات النمط"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:15
+#: M:/llol_step09/main/templates/admin/settings.html.j2:15
 msgid "Live Preview"
 msgstr "معاينة حية"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:18
+#: M:/llol_step09/main/templates/admin/settings.html.j2:18
 msgid "Example Title"
 msgstr "مثال العنوان"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:19
+#: M:/llol_step09/main/templates/admin/settings.html.j2:19
 msgid "This is a sample section with example content."
 msgstr "هذا قسم عينة مع مثال محتوى."
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:23
+#: M:/llol_step09/main/templates/admin/settings.html.j2:23
 msgid "section_title_css"
 msgstr "section_title_css"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:25
-#: M:/llol_step08/main/templates/admin/settings.html.j2:51
+#: M:/llol_step09/main/templates/admin/settings.html.j2:25
+#: M:/llol_step09/main/templates/admin/settings.html.j2:51
 msgid "Font Size"
 msgstr "حجم الخط"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:34
-#: M:/llol_step08/main/templates/admin/settings.html.j2:60
+#: M:/llol_step09/main/templates/admin/settings.html.j2:34
+#: M:/llol_step09/main/templates/admin/settings.html.j2:60
 msgid "Color"
 msgstr "لون"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:39
+#: M:/llol_step09/main/templates/admin/settings.html.j2:39
 msgid "Font Weight"
 msgstr "وزن الخط"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:49
+#: M:/llol_step09/main/templates/admin/settings.html.j2:49
 msgid "paragraph_css"
 msgstr "الفقرة"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:69
+#: M:/llol_step09/main/templates/admin/settings.html.j2:69
 msgid "Choose Theme Mode"
 msgstr "اختر وضع السمة"
 
-#: M:/llol_step08/main/templates/admin/settings.html.j2:70
+#: M:/llol_step09/main/templates/admin/settings.html.j2:70
 msgid "Theme"
 msgstr "سمة"
 
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:3
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:6
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:3
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:6
 msgid "Manage Paragraphs for Section"
 msgstr "إدارة الفقرات للقسم"
 
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:13
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:13
 msgid "Add New Paragraph"
 msgstr "أضف فقرة جديدة"
 
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:26
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:21
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:96
+msgid "Location"
+msgstr "موقع"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:23
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:98
+msgid "Main"
+msgstr "رئيسي"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:24
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:99
+msgid "Secondary"
+msgstr "ثانوي"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:25
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:100
+msgid "Header"
+msgstr "رأس"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:26
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:101
+msgid "Footer"
+msgstr "تذييل"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:27
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:102
+msgid "Sidebar"
+msgstr "الشريط الجانبي"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:28
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:103
+msgid "Topbar"
+msgstr "Topbar"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:29
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:104
+msgid "Left Column"
+msgstr "العمود الأيسر"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:30
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:105
+msgid "Right Column"
+msgstr "العمود الأيمن"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:31
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:106
+msgid "Highlighted"
+msgstr "أبرز"
+
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:42
 msgid "Add Paragraph"
 msgstr "أضف الفقرة"
 
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:47
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:63
 msgid "Are you sure you want to delete this paragraph?"
 msgstr "هل أنت متأكد أنك تريد حذف هذه الفقرة؟"
 
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:67
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:83
 msgid "Manage Fields"
 msgstr "إدارة الحقول"
 
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:104
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:135
 msgid "No paragraphs yet."
 msgstr "لا فقرات حتى الآن."
 
-#: M:/llol_step08/main/templates/admin/single_section_view.html.j2:108
+#: M:/llol_step09/main/templates/admin/single_section_view.html.j2:139
 msgid "Back to Sections"
 msgstr "العودة إلى الأقسام"
 
-#: M:/llol_step08/main/templates/partials/footer.html.j2:2
+#: M:/llol_step09/main/templates/partials/footer.html.j2:2
 msgid "All rights reserved."
 msgstr "جميع الحقوق محفوظة."

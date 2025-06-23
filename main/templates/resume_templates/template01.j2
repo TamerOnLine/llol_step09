@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ full_name }} – Lebenslauf</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/resume_templates/template01.css') }}">
+</head>
+<body>
+
+<div class="resume-container">
+    <div class="sidebar">
+        {% for section in sections %}
+            {% if section.title in ["Profilbild", "Lebenslauf", "Kontaktdaten", "Sprachen"] %}
+                <div class="section">
+                    <h2>{{ section.title }}</h2>
+                    {% for paragraph in section.paragraphs %}
+                        <p>{{ paragraph.content }}</p>
+                        {% if paragraph.fields %}
+                            <ul>
+                                {% for field in paragraph.fields %}
+                                    {% if field.is_visible %}
+                                        <li><strong>{{ field.key }}:</strong> {{ field.value }}</li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <div class="main-content">
+        {% for section in sections %}
+            {% if section.title not in ["Profilbild", "Lebenslauf", "Kontaktdaten", "Sprachen"] %}
+                <div class="section">
+                    <h2>{{ section.title }}</h2>
+                    {% for paragraph in section.paragraphs %}
+                        <p>{{ paragraph.content }}</p>
+                        {% if paragraph.fields %}
+                            <ul>
+                                {% for field in paragraph.fields %}
+                                    {% if field.is_visible %}
+                                        <li><strong>{{ field.key }}</strong> {{ field.value }}</li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+</body>
+</html>

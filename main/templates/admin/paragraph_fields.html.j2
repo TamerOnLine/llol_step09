@@ -14,10 +14,10 @@
 <h2>➕ {{ _('Add New Field') }}</h2>
 <form method="POST" action="{{ url_for('admin.add_field', paragraph_id=paragraph.id) }}">
     <label>{{ _('Key') }}:</label>
-    <input type="text" name="key" required>
+    <input type="text" name="key">
 
     <label>{{ _('Value') }}:</label>
-    <input type="text" name="value" required>
+    <input type="text" name="value">
 
     <label>{{ _('Type') }}:</label>
     <select name="type">
@@ -72,10 +72,10 @@
       <div id="edit-form-{{ field.id }}" style="display: none; margin-top: 10px;">
         <form method="POST" action="{{ url_for('admin.edit_field', field_id=field.id) }}">
           <label>{{ _('Key') }}:</label>
-          <input type="text" name="key" value="{{ field.key }}" required>
+          <input type="text" name="key" value="{{ field.key }}" >
 
           <label>{{ _('Value') }}:</label>
-          <input type="text" name="value" value="{{ field.value }}" required>
+          <input type="text" name="value" value="{{ field.value }}" >
 
           <label>{{ _('Type') }}:</label>
           <select name="type">

@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #000;
+}
+
+.resume-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    width: 35%;
+    background: #0c4f7c;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.sidebar h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.sidebar .section-title {
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.main-content {
+    width: 65%;
+    padding: 30px;
+}
+
+.main-content .section {
+    margin-bottom: 25px;
+}
+
+.main-content .section h3 {
+    background: #0c4f7c;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.main-content .section p,
+.main-content .section ul {
+    margin-left: 15px;
+    font-size: 14px;
+}

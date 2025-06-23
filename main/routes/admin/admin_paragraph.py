@@ -22,12 +22,14 @@ def add_paragraph(section_id):
     paragraph_type = request.form.get('type', 'basic')
     order = int(request.form.get('order', 0))
     is_visible = 'is_visible' in request.form
+    location = request.form.get('location', 'main')
 
     paragraph = ResumeParagraph(
         resume_section_id=section.id,
         field_type=paragraph_type,
         order=order,
-        is_visible=is_visible
+        is_visible=is_visible,
+        location=location
     )
     db.session.add(paragraph)
     db.session.commit()
@@ -43,6 +45,7 @@ def edit_paragraph(paragraph_id):
     paragraph.field_type = request.form.get('type', paragraph.field_type)
     paragraph.order = int(request.form.get('order', paragraph.order))
     paragraph.is_visible = 'is_visible' in request.form
+    paragraph.location = request.form.get('location', paragraph.location)
     db.session.commit()
     with force_locale(get_locale()):
         flash(_("Paragraph updated successfully"), "success")

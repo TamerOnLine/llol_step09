@@ -18,6 +18,22 @@
     <label>{{ _('Order') }}:</label>
     <input type="number" name="order" min="1" value="1" required>
 
+    <label for="location">{{ _('Location') }}</label>
+    <select name="location" class="form-control">
+      <option value="main" selected>{{ _('Main') }}</option>
+      <option value="secondary">{{ _('Secondary') }}</option>
+      <option value="header">{{ _('Header') }}</option>
+      <option value="footer">{{ _('Footer') }}</option>
+      <option value="sidebar">{{ _('Sidebar') }}</option>
+      <option value="topbar">{{ _('Topbar') }}</option>
+      <option value="left-column">{{ _('Left Column') }}</option>
+      <option value="right-column">{{ _('Right Column') }}</option>
+      <option value="highlighted">{{ _('Highlighted') }}</option>
+    </select>
+
+
+
+
     <label style="margin-left: 10px;">
         <input type="checkbox" name="is_visible" checked>
         {{ _('Visible') }}
@@ -76,6 +92,21 @@
 
           <label>{{ _('Order') }}:</label>
           <input type="number" name="order" value="{{ paragraph.order }}" required>
+
+          <label for="location">{{ _('Location') }}</label>
+          <select name="location" class="form-control">
+            <option value="main" {{ 'selected' if paragraph.location == 'main' else '' }}>{{ _('Main') }}</option>
+            <option value="secondary" {{ 'selected' if paragraph.location == 'secondary' else '' }}>{{ _('Secondary') }}</option>
+            <option value="header" {{ 'selected' if paragraph.location == 'header' else '' }}>{{ _('Header') }}</option>
+            <option value="footer" {{ 'selected' if paragraph.location == 'footer' else '' }}>{{ _('Footer') }}</option>
+            <option value="sidebar" {{ 'selected' if paragraph.location == 'sidebar' else '' }}>{{ _('Sidebar') }}</option>
+            <option value="topbar" {{ 'selected' if paragraph.location == 'topbar' else '' }}>{{ _('Topbar') }}</option>
+            <option value="left-column" {{ 'selected' if paragraph.location == 'left-column' else '' }}>{{ _('Left Column') }}</option>
+            <option value="right-column" {{ 'selected' if paragraph.location == 'right-column' else '' }}>{{ _('Right Column') }}</option>
+  <option value="highlighted" {{ 'selected' if paragraph.location == 'highlighted' else '' }}>{{ _('Highlighted') }}</option>
+</select>
+
+
 
           <label>
             <input type="checkbox" name="is_visible" {% if paragraph.is_visible %}checked{% endif %}>

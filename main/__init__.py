@@ -5,8 +5,11 @@ from .models.models import (
 )
 from .routes.admin import admin_bp
 from .routes.main_routes import main_bp
+from .routes.resume_templates import template_blueprints
 from .extensions import babel
 from .i18n_runtime import init_i18n, get_locale
+
+
 import os
 import logging
 
@@ -36,6 +39,8 @@ def create_app():
 
     app.register_blueprint(main_bp)
     app.register_blueprint(admin_bp)
+    for bp in template_blueprints:
+        app.register_blueprint(bp)
 
     with app.app_context():
         db_path = os.path.join(app.instance_path, 'lebenslauf.db')
