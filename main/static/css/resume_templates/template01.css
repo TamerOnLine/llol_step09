@@ -1,82 +1,67 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #000;
+.resume section {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.resume-header { background-color: #f8f9fa; }
+.resume-main { background-color: #fff; }
+.resume-secondary { background-color: #f0f0f0; }
+.resume-footer { background-color: #f8f8f8; }
+
+.paragraph-block h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.paragraph-block p {
+  margin: 4px 0;
 }
 
 .resume-container {
-    display: flex;
-    max-width: 1000px;
-    margin: 40px auto;
-    background: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Arial', sans-serif;
 }
 
-.sidebar {
-    width: 35%;
-    background: #0c4f7c;
-    color: white;
-    padding: 20px;
+.section-count {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.sidebar img {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+.resume-section {
+  margin-bottom: 30px;
 }
 
-.sidebar h1 {
-    font-size: 22px;
-    margin-bottom: 5px;
+.resume-section.header {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
 }
 
-.sidebar h2 {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 20px;
+.resume-section.footer {
+  border-top: 2px solid #eee;
+  padding-top: 10px;
 }
 
-.sidebar .section-title {
-    font-weight: bold;
-    border-bottom: 1px solid #fff;
-    margin-top: 30px;
-    margin-bottom: 10px;
+.paragraph-block {
+  margin-bottom: 15px;
 }
 
-.sidebar ul {
-    padding-left: 0;
-    list-style: none;
+.paragraph-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 8px;
 }
 
-.sidebar ul li {
-    margin-bottom: 10px;
-}
-
-.main-content {
-    width: 65%;
-    padding: 30px;
-}
-
-.main-content .section {
-    margin-bottom: 25px;
-}
-
-.main-content .section h3 {
-    background: #0c4f7c;
-    color: white;
-    padding: 8px;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.main-content .section p,
-.main-content .section ul {
-    margin-left: 15px;
-    font-size: 14px;
+.field-line {
+  margin-left: 10px;
+  font-size: 15px;
+  color: #444;
 }

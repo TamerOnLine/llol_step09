@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash
-from main.models.models import ResumeSection
+from main.models.resume_section import ResumeSection
 from main.extensions import db
 from main.i18n_runtime import get_locale
 from flask_babel import force_locale, gettext as _

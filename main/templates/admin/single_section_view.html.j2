@@ -4,35 +4,36 @@
 
 {% block content %}
 <h1>📂 {{ _('Manage Paragraphs for Section') }}: <strong>{{ section.title }}</strong></h1>
-<!-- ✅ Flash messages -->
 
 {% include 'partials/flash_messages.html.j2' %}
-
 
 <!-- ✅ نموذج إضافة فقرة -->
 <h2>➕ {{ _('Add New Paragraph') }}</h2>
 <form method="POST" action="{{ url_for('admin.add_paragraph', section_id=section.id) }}">
     <label>{{ _('Type') }}:</label>
-    <input type="text" name="type" value="basic" required>
+    <select name="type" required>
+        <option value="basic">Basic</option>
+        <option value="list">List</option>
+        <option value="timeline">Timeline</option>
+        <option value="quote">Quote</option>
+        <option value="project">Project</option>
+    </select>
 
     <label>{{ _('Order') }}:</label>
-    <input type="number" name="order" min="1" value="1" required>
+    <input type="text" name="order" min="1" value="1" required>
 
     <label for="location">{{ _('Location') }}</label>
     <select name="location" class="form-control">
-      <option value="main" selected>{{ _('Main') }}</option>
-      <option value="secondary">{{ _('Secondary') }}</option>
-      <option value="header">{{ _('Header') }}</option>
-      <option value="footer">{{ _('Footer') }}</option>
-      <option value="sidebar">{{ _('Sidebar') }}</option>
-      <option value="topbar">{{ _('Topbar') }}</option>
-      <option value="left-column">{{ _('Left Column') }}</option>
-      <option value="right-column">{{ _('Right Column') }}</option>
-      <option value="highlighted">{{ _('Highlighted') }}</option>
+        <option value="main" selected>{{ _('Main') }}</option>
+        <option value="secondary">{{ _('Secondary') }}</option>
+        <option value="header">{{ _('Header') }}</option>
+        <option value="footer">{{ _('Footer') }}</option>
+        <option value="sidebar">{{ _('Sidebar') }}</option>
+        <option value="topbar">{{ _('Topbar') }}</option>
+        <option value="left-column">{{ _('Left Column') }}</option>
+        <option value="right-column">{{ _('Right Column') }}</option>
+        <option value="highlighted">{{ _('Highlighted') }}</option>
     </select>
-
-
-
 
     <label style="margin-left: 10px;">
         <input type="checkbox" name="is_visible" checked>
@@ -47,13 +48,24 @@
 <!-- ✅ عرض الفقرات -->
 {% if paragraphs %}
   {% for paragraph in paragraphs|sort(attribute='order') %}
-    <div id="paragraph-box-{{ paragraph.id }}" style="border: 1px solid #ccc; margin-bottom: 20px; padding: 15px;">
+    <div id="paragraph-box-{{ paragraph.id }}"
+         style="border: 1px solid #ccc; margin-bottom: 20px; padding: 15px;
+                {% if not paragraph.is_visible %}opacity: 0.5;{% endif %}">
+        
       <h2 style="display: inline;">
-        📄  <strong>{{ paragraph.field_type|capitalize }}</strong> ({{ paragraph.order }})
+        📄 <strong>{{ paragraph.field_type|capitalize }}</strong> ({{ paragraph.order }})
         {% if not paragraph.is_visible %}
           <span style="color: red;">[{{ _('Hidden') }}]</span>
         {% endif %}
       </h2>
+
+      <span class="badge" style="background-color:#eee; padding: 3px 6px; border-radius: 5px;">
+        {{ paragraph.location|capitalize }}
+      </span>
+
+      <span style="color: gray; margin-left: 10px;">
+        {{ paragraph.resume_fields|length }} {{ _('fields') }}
+      </span>
 
       <!-- ✅ أزرار التحكم -->
       <span style="margin-left: 10px;">
@@ -78,7 +90,6 @@
           </button>
         </form>
 
-        <!-- إدارة الحقول -->
         <a href="{{ url_for('admin.view_paragraph_fields', paragraph_id=paragraph.id) }}">
           <button title="{{ _('Manage Fields') }}">🗂️</button>
         </a>
@@ -88,25 +99,29 @@
       <div id="edit-form-{{ paragraph.id }}" style="display: none; margin-top: 10px;">
         <form method="POST" action="{{ url_for('admin.edit_paragraph', paragraph_id=paragraph.id) }}">
           <label>{{ _('Type') }}:</label>
-          <input type="text" name="type" value="{{ paragraph.field_type }}" required>
+          <select name="type" required>
+              <option value="basic" {% if paragraph.field_type == 'basic' %}selected{% endif %}>Basic</option>
+              <option value="list" {% if paragraph.field_type == 'list' %}selected{% endif %}>List</option>
+              <option value="timeline" {% if paragraph.field_type == 'timeline' %}selected{% endif %}>Timeline</option>
+              <option value="quote" {% if paragraph.field_type == 'quote' %}selected{% endif %}>Quote</option>
+              <option value="project" {% if paragraph.field_type == 'project' %}selected{% endif %}>Project</option>
+          </select>
 
           <label>{{ _('Order') }}:</label>
-          <input type="number" name="order" value="{{ paragraph.order }}" required>
+          <input type="text" name="order" value="{{ paragraph.order }}" required>
 
           <label for="location">{{ _('Location') }}</label>
           <select name="location" class="form-control">
-            <option value="main" {{ 'selected' if paragraph.location == 'main' else '' }}>{{ _('Main') }}</option>
-            <option value="secondary" {{ 'selected' if paragraph.location == 'secondary' else '' }}>{{ _('Secondary') }}</option>
-            <option value="header" {{ 'selected' if paragraph.location == 'header' else '' }}>{{ _('Header') }}</option>
-            <option value="footer" {{ 'selected' if paragraph.location == 'footer' else '' }}>{{ _('Footer') }}</option>
-            <option value="sidebar" {{ 'selected' if paragraph.location == 'sidebar' else '' }}>{{ _('Sidebar') }}</option>
-            <option value="topbar" {{ 'selected' if paragraph.location == 'topbar' else '' }}>{{ _('Topbar') }}</option>
-            <option value="left-column" {{ 'selected' if paragraph.location == 'left-column' else '' }}>{{ _('Left Column') }}</option>
-            <option value="right-column" {{ 'selected' if paragraph.location == 'right-column' else '' }}>{{ _('Right Column') }}</option>
-  <option value="highlighted" {{ 'selected' if paragraph.location == 'highlighted' else '' }}>{{ _('Highlighted') }}</option>
-</select>
-
-
+              <option value="main" {{ 'selected' if paragraph.location == 'main' else '' }}>{{ _('Main') }}</option>
+              <option value="secondary" {{ 'selected' if paragraph.location == 'secondary' else '' }}>{{ _('Secondary') }}</option>
+              <option value="header" {{ 'selected' if paragraph.location == 'header' else '' }}>{{ _('Header') }}</option>
+              <option value="footer" {{ 'selected' if paragraph.location == 'footer' else '' }}>{{ _('Footer') }}</option>
+              <option value="sidebar" {{ 'selected' if paragraph.location == 'sidebar' else '' }}>{{ _('Sidebar') }}</option>
+              <option value="topbar" {{ 'selected' if paragraph.location == 'topbar' else '' }}>{{ _('Topbar') }}</option>
+              <option value="left-column" {{ 'selected' if paragraph.location == 'left-column' else '' }}>{{ _('Left Column') }}</option>
+              <option value="right-column" {{ 'selected' if paragraph.location == 'right-column' else '' }}>{{ _('Right Column') }}</option>
+              <option value="highlighted" {{ 'selected' if paragraph.location == 'highlighted' else '' }}>{{ _('Highlighted') }}</option>
+          </select>
 
           <label>
             <input type="checkbox" name="is_visible" {% if paragraph.is_visible %}checked{% endif %}>
@@ -135,15 +150,12 @@
   <p style="color: gray;">{{ _('No paragraphs yet.') }}</p>
 {% endif %}
 
-<!-- 🔙 رجوع للأقسام -->
 <a href="{{ url_for('admin.resume_builder') }}">← {{ _('Back to Sections') }}</a>
 
-<!-- ✅ JavaScript لعرض نموذج التعديل -->
 <script>
 function toggleEditForm(id) {
   const el = document.getElementById("edit-form-" + id);
   el.style.display = (el.style.display === "none") ? "block" : "none";
 }
 </script>
-
 {% endblock %}

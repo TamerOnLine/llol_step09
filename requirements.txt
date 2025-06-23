@@ -21,6 +21,8 @@ mkdocs-material
 mkdocs-awesome-pages-plugin
 mkdocs-git-revision-date-plugin
 mkdocs-macros-plugin
+# step 14 - llol_step09:
+flask-migrate
 
 
 

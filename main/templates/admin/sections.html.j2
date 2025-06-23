@@ -3,13 +3,22 @@
 {% block title %}{{ _('Manage Sections') }}{% endblock %}
 
 {% block content %}
-    <h1>📝 {{ _('Edit Resume Sections') }}</h1>
-    <form method="POST">
-        {% for section in sections %}
-            <h3>{{ section.title }}</h3>
-            <textarea name="{{ section.id }}" rows="4" cols="80">{{ section.content }}</textarea>
-            <hr>
-        {% endfor %}
-        <button type="submit">💾 {{ _('Save Changes') }}</button>
-    </form>
+  <h1>📝 {{ _('Edit Resume Sections') }}</h1>
+
+  <!-- ✅ Flash messages -->
+  {% include 'partials/flash_messages.html.j2' %}
+
+  <form method="POST">
+    {% for section in sections %}
+      <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-left: 5px solid #007BFF;">
+        <h2>{{ section.title }}</h2>
+
+        <label for="section-{{ section.id }}">{{ _('Content') }}:</label>
+        <textarea id="section-{{ section.id }}" name="{{ section.id }}"
+                  rows="6" style="width: 100%; padding: 10px;">{{ section.content }}</textarea>
+      </div>
+    {% endfor %}
+
+    <button type="submit" style="padding: 10px 20px;">💾 {{ _('Save Changes') }}</button>
+  </form>
 {% endblock %}

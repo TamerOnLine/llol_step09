@@ -1,8 +1,14 @@
 from flask import Flask
-from .models.models import (
-    db, Section, Setting, ResumeSection,
-    ResumeParagraph, ResumeField, NavigationLink, LanguageOption
-)
+from main.extensions import db
+
+from main.models.resume_section import ResumeSection
+from main.models.resume_paragraph import ResumeParagraph
+from main.models.resume_field import ResumeField
+from main.models.resume_setting import Setting
+from main.models.Section import Section
+from main.models.LanguageOption import LanguageOption
+from main.models.NavigationLink import NavigationLink
+
 from .routes.admin import admin_bp
 from .routes.main_routes import main_bp
 from .routes.resume_templates import template_blueprints

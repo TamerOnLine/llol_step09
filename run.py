@@ -3,6 +3,7 @@ from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parent))
 
+from flask_migrate import Migrate  # ✅ الجديد
 from main.config.config_loader import load_env_config
 from main.config.db_initializer import ensure_database_exists
 from main import create_app
@@ -14,6 +15,8 @@ ensure_database_exists()
 
 # Initialize the Flask application
 app = create_app()
+
+migrate = Migrate(app, db)  # ✅ تفعيل Flask-Migrate
 
 with app.app_context():
     db.create_all()

@@ -1,12 +1,12 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash
-from main.models.models import db, ResumeSection, ResumeParagraph
+from main.extensions import db
+from main.models.resume_section import ResumeSection
+from main.models.resume_paragraph import ResumeParagraph
 from main.i18n_runtime import get_locale
 from flask_babel import force_locale, gettext as _
-
 from . import admin_bp
 
-
-# View all paragraphs within a specific section
+# عرض فقرات قسم محدد
 @admin_bp.route('/section/<int:section_id>/view')
 def single_section_view(section_id):
     section = ResumeSection.query.get_or_404(section_id)
@@ -14,8 +14,7 @@ def single_section_view(section_id):
     with force_locale(get_locale()):
         return render_template('admin/single_section_view.html.j2', section=section, paragraphs=paragraphs)
 
-
-# Add a paragraph
+# إضافة فقرة جديدة إلى قسم
 @admin_bp.route('/paragraph/add/<int:section_id>', methods=['POST'])
 def add_paragraph(section_id):
     section = ResumeSection.query.get_or_404(section_id)
@@ -37,8 +36,7 @@ def add_paragraph(section_id):
         flash(_("Paragraph added successfully"), "success")
     return redirect(url_for('admin.single_section_view', section_id=section.id))
 
-
-# Edit a paragraph
+# تعديل فقرة
 @admin_bp.route('/paragraph/edit/<int:paragraph_id>', methods=['POST'])
 def edit_paragraph(paragraph_id):
     paragraph = ResumeParagraph.query.get_or_404(paragraph_id)
@@ -51,8 +49,7 @@ def edit_paragraph(paragraph_id):
         flash(_("Paragraph updated successfully"), "success")
     return redirect(url_for('admin.single_section_view', section_id=paragraph.resume_section_id))
 
-
-# Delete a paragraph
+# حذف فقرة
 @admin_bp.route('/paragraph/delete/<int:paragraph_id>', methods=['POST'])
 def delete_paragraph(paragraph_id):
     paragraph = ResumeParagraph.query.get_or_404(paragraph_id)
@@ -63,8 +60,7 @@ def delete_paragraph(paragraph_id):
         flash(_("Paragraph deleted"), "danger")
     return redirect(url_for('admin.single_section_view', section_id=section_id))
 
-
-# Toggle paragraph visibility
+# تبديل حالة الظهور للفقرة
 @admin_bp.route('/paragraph/toggle_visibility/<int:paragraph_id>', methods=['POST'])
 def toggle_paragraph_visibility(paragraph_id):
     paragraph = ResumeParagraph.query.get_or_404(paragraph_id)
@@ -77,8 +73,7 @@ def toggle_paragraph_visibility(paragraph_id):
             flash(_("Paragraph is now hidden"), "warning")
     return redirect(url_for('admin.single_section_view', section_id=paragraph.resume_section_id))
 
-
-# Move a paragraph up
+# تحريك فقرة لأعلى
 @admin_bp.route('/paragraph/move_up/<int:paragraph_id>', methods=['POST'])
 def move_paragraph_up(paragraph_id):
     paragraph = ResumeParagraph.query.get_or_404(paragraph_id)
@@ -97,8 +92,7 @@ def move_paragraph_up(paragraph_id):
             flash(_("Already at the top"), "warning")
     return redirect(url_for('admin.single_section_view', section_id=section.id))
 
-
-# Move a paragraph down
+# تحريك فقرة لأسفل
 @admin_bp.route('/paragraph/move_down/<int:paragraph_id>', methods=['POST'])
 def move_paragraph_down(paragraph_id):
     paragraph = ResumeParagraph.query.get_or_404(paragraph_id)
@@ -116,3 +110,10 @@ def move_paragraph_down(paragraph_id):
         with force_locale(get_locale()):
             flash(_("Already at the bottom"), "warning")
     return redirect(url_for('admin.single_section_view', section_id=section.id))
+
+
+@admin_bp.route('/paragraph/<int:paragraph_id>/fields')
+def manage_fields(paragraph_id):
+    paragraph = ResumeParagraph.query.get_or_404(paragraph_id)
+    fields = paragraph.fields  # إذا كانت العلاقة معرفة
+    return render_template('admin/manage_fields.html.j2', paragraph=paragraph, fields=fields)
