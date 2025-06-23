@@ -1,10 +1,13 @@
 from main.extensions import db
 from sqlalchemy.dialects.postgresql import JSON
 
+
+
 class ResumeSection(db.Model):
     """
     Resume section with language support and visibility toggle.
     """
+    __tablename__ = "resume_section"
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), nullable=False)
     order = db.Column(db.Integer, nullable=False)
@@ -14,7 +17,8 @@ class ResumeSection(db.Model):
 
     paragraphs = db.relationship(
         "ResumeParagraph",
-        backref="resume_section",
+        back_populates="resume_section",
         cascade="all, delete-orphan",
         lazy=True
     )
+

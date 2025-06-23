@@ -1,10 +1,14 @@
 from main.extensions import db
 from sqlalchemy.dialects.postgresql import JSON
 
+
+
+
 class ResumeParagraph(db.Model):
     """
     Paragraph unit under a resume section.
     """
+    __tablename__ = "resume_paragraph"
     id = db.Column(db.Integer, primary_key=True)
     resume_section_id = db.Column(db.Integer, db.ForeignKey('resume_section.id'), nullable=False)
     field_type = db.Column("type", db.String(50), nullable=False)  # e.g., basic, with_description, with_date
@@ -18,4 +22,9 @@ class ResumeParagraph(db.Model):
         back_populates="paragraph",
         cascade="all, delete-orphan",
         lazy=True
+    )
+
+    resume_section = db.relationship(
+        "ResumeSection",
+        back_populates="paragraphs"
     )
